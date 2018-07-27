@@ -9,15 +9,19 @@
     <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Anton|Bitter|Cabin|Fjalla+One|Markazi+Text|Noto+Serif" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="css/jquery.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
 
 </head>
 
 <body>
     <img src="images/scrollup.png" width="3%" id="myBtn" class="myBtn" style="display: none">
     <div class="icon">
-        <img src="images/facebook.png">
-        <img src="images/linkedin.png">
-        <img src="images/whatsapp.png">
+        <img src="images/facebook.png" id="fb">
+        <img src="images/linkedin.png" id="ln">
         <img src="images/twitter.png">
     </div>
     <div class="content">
@@ -29,92 +33,116 @@
         </div>
     </div>
 
-
-
-
-    <div id="education">
-        <div class="education card ">
+    <div id="education" class="education">
+        <div id="tabs" style="border: 0">
             <h1>EDUCATION <span></span></h1>
-            <h2>BTech</h2>
-            <h3>Federal Institute of Science and Technology, Mookanoor, Ankamaly</h3>
-            <h3>University :
-                <span>Mahatma Gandhi University</span>
-            </h3>
-            <h3>Stream :
-                <span>Computer Science and Engineering</span>
-            </h3>
-            <h3>CGPA :
-                <span>6.57</span>
-            </h3>
+            <ul style="background-color: rgba(19, 187, 243, 0.473);">
 
-            <h2>12th </h2>
-            <h3>Rajashree S.M.M School, Aluva, Ernakulam</h3>
-            <h3>Sylabus :
-                <span>CBSE</span>
-            </h3>
-            <h3>Stream :
-                <span>Computer Science</span>
-            </h3>
-            <h3>CGPA :
-                <span>8.0</span>
-            </h3>
+                <li><a href="#tabs-1">BTech</a></li>
 
-            <h2>10th</h2>
-            <h3>Rajashree S.M.M School, Aluva, Ernakulam</h3>
-            <h3>Sylabus :
-                <span>CBSE</span>
-            </h3>
-            <h3>CGPA :
-                <span>8.4</span>
-            </h3>
-        </div>
-    </div>
-    <div id="tech">
 
-        <div class="tech card">
-            <h1>TECHNICAL KNOWLEDGE</h1>
-            <ul>
-                <h2>Basic Knowledge in Languages</h2>
+                <li><a href="#tabs-2">12th</a> </li>
 
-                <li>C</li>
-                <li>C++</li>
-                <li>Java</li>
-                <li>Python</li>
-                <li>SQL</li>
+
+                <li><a href="#tabs-3">10th</a></li>
             </ul>
 
-            <ul>
-                <h2>Operating Systems Known</h2>
+
+            <div id="tabs-1">
+                <h3>Federal Institute of Science and Technology, Mookanoor, Ankamaly</h3>
+                <h3>University :
+                    <span>Mahatma Gandhi University</span>
+                </h3>
+                <h3>Stream :
+                    <span>Computer Science and Engineering</span>
+                </h3>
+                <h3>CGPA :
+                    <span>6.57</span>
+                </h3>
+            </div>
+            <div id="tabs-2">
+                <h3>Rajashree S.M.M School, Aluva, Ernakulam</h3>
+                <h3>Sylabus :
+                    <span>CBSE</span>
+                </h3>
+                <h3>Stream :
+                    <span>Computer Science</span>
+                </h3>
+                <h3>CGPA :
+                    <span>8.0</span>
+                </h3>
+            </div>
+            <div id="tabs-3">
+                <h3>Rajashree S.M.M School, Aluva, Ernakulam</h3>
+                <h3>Sylabus :
+                    <span>CBSE</span>
+                </h3>
+                <h3>CGPA :
+                    <span>8.4</span>
+                </h3>
+            </div>
+        </div>
+    </div>
+    <div id="tech" class="tech">
+
+
+        <div id="accordion">
+
+            <h2>Basic Knowledge in Languages</h2>
+            <div id="resizable" class="ui-widget-content">
+                <ul>
+
+
+                    <li>C</li>
+                    <li>C++</li>
+                    <li>Java</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>Python</li>
+                    <li>SQL</li>
+                </ul>
+            </div>
+            <h2>Operating Systems Known</h2>
+            <ul style="background-color: rgba(19, 187, 243, 0.473);">
+
                 <li>Windows</li>
                 <li>Linux</li>
             </ul>
 
         </div>
+
+    </div>
     </div>
     <div id="project">
 
-        <div id="pro" class="project card">
-            <h1>PROJECT</h1>
+
+        <div class="project card">
+            <h1>PROJECTS</h1>
             <h2>Developed a Game named 'PING PONG'</h2>
-            <h3>In this project we developed a game named 'PING PONG' which is similar to the table tennis game.The language used is Python.The user plays with the computer as opponent. We have tried to use artificial intelligence for the computer game play.</h3>
+            <span><h3>In this project we developed a game named 'PING PONG' which is similar to the table tennis game.The language used is Python.The user plays with the computer as opponent. We have tried to use artificial intelligence for the computer game play.</h3></span>
 
             <h2> Developed a Web Phishing Detection</h2>
-            <h3>In this project we a team of 4 members developed a python based Web Phishing site detection. This project basically on Data mining using 14 URL Feature extraction we detected whether the URl given by the user is Phished URl or not.</h3>
+            <span><h3>In this project we a team of 4 members developed a python based Web Phishing site detection. This project basically on Data mining using 14 URL Feature extraction we detected whether the URl given by the user is Phished URl or not.</h3></span>
 
             <h2>Developed a website named 'Smashing Magazine'</h2>
-            <h3>In this project I have developed an HTML page which consist of blogs and details of author using various CSS styles, JavaScript.It works great in laptop, tab and mobile versions.</h3>
+            <span>
+                  <h3>In this project I have developed an HTML page which consist of blogs and details of author using various CSS styles, JavaScript.It works great in laptop, tab and mobile versions.</h3>
+            </span>
 
         </div>
     </div>
     <div id="person">
-
-        <ul class="person card">
+        <div class="person card">
             <h1>PERSONAL QUALTIES</h1>
-            <li>Good coordinating Skills</li>
-            <li>Strong Decision Maker</li>
-            <li>Ready to take Challenges</li>
-            <li>Good at resolving issues</li>
-        </ul>
+            <ul>
+
+                <li>Good coordinating Skills</li>
+                <li>Strong Decision Maker</li>
+                <li>Ready to take Challenges</li>
+                <li>Good at resolving issues</li>
+            </ul>
+        </div>
     </div>
     <div id="extra">
         <div class="extra card">
@@ -130,8 +158,8 @@
         </div>
     </div>
     <footer>
-        <a href="#education" id="eduLink">EDUCATION</a>
-        <a href="#tech" id="techLink">TECHNICAL KNOWLEDGE</a>
+        <a id="eduLink">EDUCATION</a>
+        <a href="#accordion" id="techLink">TECHNICAL KNOWLEDGE</a>
         <a href="#project" id="projectLink">PROJECT</a>
         <a href="#person" id="personLink">PERSONNEL QUALITIES</a>
         <a href="#extra" id="extraLink">Extra Curricular Activities</a>
